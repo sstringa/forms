@@ -1,0 +1,21 @@
+name: Nuova feature
+description: Scrivi una nuova idea per Yp
+title: "[FEAT]: "
+labels: ["enhancement"]
+projects: ["sstringa/4,sstringa/5"]
+body:
+  - type: input
+    id: nome
+    attributes:
+      label: Titolo nuova feature
+      placeholder: nuova feature
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Problema
+      description: Cosa è successo? Per favore descrivi l'anomalia e allega immagini o video.
+      placeholder: Descrizione chiara e precisa di quello che si è verificato allegando, se possibile, immagini o video.
+    validations:
+      required: true
