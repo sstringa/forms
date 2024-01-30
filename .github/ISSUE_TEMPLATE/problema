@@ -1,0 +1,88 @@
+name: Problema youPark
+description: Crea un rapporto di un problema di youPark
+title: "[BUG]: "
+labels: ["bug"]
+projects: ["sstringa/4,sstringa/5"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Se hai rilevato un baco o un problema relativo a youPark compila il modulo
+  - type: input
+    id: ticket-ref
+    attributes:
+      label: Ticket collegato
+      description: Se c'è un ticket collegato a questo problema su hubspot quale è il suo ID?
+      placeholder: ID ticket
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Problema
+      description: Cosa è successo? Per favore descrivi l'anomalia e allega immagini o video.
+      placeholder: Descrizione chiara e precisa di quello che si è verificato allegando, se possibile, immagini o video.
+    validations:
+      required: true
+  - type: textarea
+    id: triggers
+    attributes:
+      label: Come riprodurre il problema
+      description: "Come si riproduce questo bug? Per favore, guidaci passo dopo passo."
+      placeholder: |
+        1. primo passo
+        2. secondo passo
+        3. terzo passo
+        ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versione FW o SW
+      description: Quale è la versione di firmware o di software del dispositivo su cui si è verificato il problema?
+      placeholder: V7.4.3.2
+  - type: dropdown
+    id: device
+    attributes:
+      label: Dispositivo
+      description: Su quale dispositivo si è verificato il problema?
+      options:
+        - ingresso
+        - uscita
+        - barriera
+        - cassa automatica
+        - cassa manuale
+        - concentratore
+        - telecamere
+        - apriporta
+        - centralizzazione
+        - postazione codifica abbonamenti
+        - vidimatore
+        - altro
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: component
+    attributes:
+      label: Componente problematico
+      description: Seleziona i componenti coinvolti nell'anomalia
+      multiple: true
+      options:
+        - CPU
+        - Display
+        - Stampante di ingresso
+        - Detector
+        - Lettore interno RFID
+        - Lettore QR code
+        - Gettoniera
+        - Hopper
+        - POS
+        - Lettore banconote
+        - Ricircolatore
+        - Stampante ricevute
+        - Alimentatore
+        - Codificatore da banco
+        - Convertitore
+        - Altro
+    validations:
+      required: true
