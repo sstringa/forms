@@ -2,7 +2,7 @@ name: Problema youPark
 description: Crea un rapporto di un problema di youPark
 title: "[BUG]: "
 labels: ["bug"]
-projects: ["sstringa/4,sstringa/5"]
+projects: ["sstringa/5"]
 body:
   - type: markdown
     attributes:
