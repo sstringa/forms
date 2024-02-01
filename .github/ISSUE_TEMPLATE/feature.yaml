@@ -2,7 +2,7 @@ name: Nuova feature
 description: Scrivi una nuova idea per Yp
 title: "[FEAT]: "
 labels: ["enhancement"]
-projects: ["sstringa/4,sstringa/5"]
+projects: ["sstringa/4"]
 body:
   - type: input
     id: nome
